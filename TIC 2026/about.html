@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Lokal-Lapak | Snack Hub Terlengkap</title>
+  <link rel="shortcut icon" href="favicon_io/faviconn.ico" type="image/x-icon" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind Config -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-error-container": "#520c00",
+            "on-tertiary-fixed-variant": "#665500",
+            "primary-fixed": "#fd8b00",
+            "on-primary-fixed": "#180800",
+            "on-surface-variant": "#5b5c5b",
+            "on-tertiary-container": "#5b4b00",
+            "primary": "#8c4a00",
+            "on-secondary-fixed": "#6e021d",
+            "surface-container": "#e8e8e7",
+            "on-background": "#2e2f2f",
+            "on-tertiary-fixed": "#453900",
+            "background": "#f7f6f5",
+            "primary-fixed-dim": "#ea8000",
+            "secondary": "#a53141",
+            "on-primary-container": "#442100",
+            "secondary-fixed-dim": "#ffaeb2",
+            "inverse-on-surface": "#9d9d9c",
+            "on-secondary": "#ffefef",
+            "secondary-container": "#ffc2c5",
+            "error": "#b02500",
+            "on-error": "#ffefec",
+            "surface-tint": "#8c4a00",
+            "primary-container": "#fd8b00",
+            "outline-variant": "#adadac",
+            "on-surface": "#2e2f2f",
+            "surface": "#f7f6f5",
+            "on-primary": "#fff0e7",
+            "surface-dim": "#d4d4d4",
+            "on-primary-fixed-variant": "#512800",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed-dim": "#efc900",
+            "secondary-dim": "#952436",
+            "error-dim": "#b92902",
+            "on-secondary-fixed-variant": "#962637",
+            "error-container": "#f95630",
+            "tertiary-fixed": "#ffd709",
+            "tertiary-dim": "#5e4e00",
+            "tertiary": "#6c5a00",
+            "outline": "#767776",
+            "surface-container-highest": "#dcdddc",
+            "on-secondary-container": "#891b2e",
+            "surface-container-low": "#f1f1f0",
+            "surface-bright": "#f7f6f5",
+            "on-tertiary": "#fff2cd",
+            "inverse-surface": "#0d0e0e",
+            "surface-container-high": "#e2e2e1",
+            "tertiary-container": "#ffd709",
+            "primary-dim": "#7b4000",
+            "inverse-primary": "#fd8b00",
+            "surface-variant": "#dcdddc",
+            "secondary-fixed": "#ffc2c5"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "headline": ["Plus Jakarta Sans"],
+            "body": ["Be Vietnam Pro"],
+            "label": ["Be Vietnam Pro"]
+          }
+        },
+      },
+    }
+  </script>
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cstyle%3E.icon-food { fill: %23d4d4d4; opacity: 0.15; } .icon-food-dark { fill: %23adadac; opacity: 0.08; }%3C/style%3E%3C/defs%3E%3Ctext x='20' y='60' class='icon-food' font-size='40' font-family='Arial'%3E🍔%3C/text%3E%3Ctext x='120' y='40' class='icon-food-dark' font-size='35' font-family='Arial'%3E🍕%3C/text%3E%3Ctext x='80' y='120' class='icon-food' font-size='38' font-family='Arial'%3E🌮%3C/text%3E%3Ctext x='30' y='150' class='icon-food-dark' font-size='36' font-family='Arial'%3E🍟%3C/text%3E%3Ctext x='140' y='160' class='icon-food' font-size='34' font-family='Arial'%3E🎂%3C/text%3E%3Ctext x='150' y='80' class='icon-food-dark' font-size='37' font-family='Arial'%3E🍪%3C/text%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      background-repeat: repeat;
+      background-attachment: fixed;
+    }
+    h1, h2, h3 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glass-sheet {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+    }
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+      .glass-sheet {
+        background: rgba(255, 255, 255, 0.85);
+      }
+    }
+    /* Custom Scrollbar Styles */
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f7f6f5;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #fd8b00;
+      border-radius: 10px;
+      transition: background 0.3s ease;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ea8000;
+    }
+    /* Firefox Scrollbar */
+    * {
+      scrollbar-color: #fd8b00 #f7f6f5;
+      scrollbar-width: thin;
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface min-h-screen pb-0 flex flex-col">
+
+<!-- ============ HEADER ============ -->
+<header id="main-header" class="bg-[#f7f6f5] dark:bg-stone-900 sticky top-0 z-40 transition-all">
+  <div class="flex flex-col w-full px-6 py-4 max-w-7xl mx-auto">
+    <div class="flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold tracking-tight text-[#8c4a00] dark:text-orange-500 hover:opacity-80 transition-opacity">
+        Lokal-Lapak
+      </a>
+      <a href="index.html" class="material-symbols-outlined text-primary hover:opacity-80 transition-opacity">home</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MAIN CONTENT ============ -->
+<main class="px-6 pt-4 max-w-4xl mx-auto space-y-8 flex-1 w-full pb-32">
+
+  <!-- Hero Section -->
+  <section class="bg-surface-container-low rounded-lg p-8 text-center mt-8">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-primary mb-4 leading-tight">Tentang Kami</h1>
+    <p class="text-on-surface-variant text-lg mb-4">Menghadirkan camilan lokal dengan sentuhan modern ke meja Anda</p>
+  </section>
+
+  <!-- Story Section -->
+  <section>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl font-extrabold mb-4 text-primary">Kisah Kami</h2>
+        <p class="text-on-surface-variant mb-4 leading-relaxed">
+          Lokal-Lapak dimulai dari sebuah misi sederhana: membuat camilan tradisional Indonesia lebih mudah diakses oleh semua orang. Kami percaya bahwa setiap jajanan lokal memiliki cerita unik dan rasa yang tak terlupakan.
+        </p>
+        <p class="text-on-surface-variant mb-4 leading-relaxed">
+          Dengan tim yang passionate dan berdedikasi, kami mengumpulkan camilan terbaik dari berbagai daerah di Indonesia. Setiap produk dalam katalog kami telah melalui proses kurasi yang ketat untuk memastikan kualitas dan keaslian rasa.
+        </p>
+        <p class="text-on-surface-variant leading-relaxed">
+          Kami tidak hanya menjual produk, tetapi juga berbagi pengalaman kuliner yang autentik dan cerita-cerita menarik di balik setiap camilan lokal.
+        </p>
+      </div>
+      <div class="bg-primary-container rounded-lg p-8 text-center">
+        <img src="favicon_io/LOGO LokalLapak.png" alt="Lokal-Lapak Logo" class="h-32 w-32 mx-auto object-contain">
+        <p class="mt-4 text-on-surface font-semibold">Snack Hub Terlengkap</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Mission -->
+    <div class="bg-surface-container rounded-lg p-6">
+      <div class="flex items-center gap-3 mb-3">
+        <span class="material-symbols-outlined text-3xl text-primary">flag</span>
+        <h3 class="text-2xl font-bold text-primary">Misi Kami</h3>
+      </div>
+      <p class="text-on-surface-variant leading-relaxed">
+        Menyediakan platform yang memudahkan pelanggan untuk menemukan, membeli, dan menikmati camilan lokal berkualitas tinggi dari seluruh nusantara.
+      </p>
+    </div>
+
+    <!-- Vision -->
+    <div class="bg-surface-container rounded-lg p-6">
+      <div class="flex items-center gap-3 mb-3">
+        <span class="material-symbols-outlined text-3xl text-primary">visibility</span>
+        <h3 class="text-2xl font-bold text-primary">Visi Kami</h3>
+      </div>
+      <p class="text-on-surface-variant leading-relaxed">
+        Menjadi hub camilan lokal nomor satu di Indonesia yang dikenal karena kualitas, keaslian, dan komitmen terhadap UMKM lokal.
+      </p>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section>
+    <h2 class="text-3xl font-extrabold mb-8 text-center text-primary">Nilai-Nilai Kami</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Value 1 -->
+      <div class="bg-surface-container rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+        <span class="material-symbols-outlined text-4xl text-primary block mb-3">verified</span>
+        <h3 class="text-lg font-bold mb-2">Keaslian</h3>
+        <p class="text-on-surface-variant text-sm">Semua produk kami 100% asli dan original dari UMKM lokal.</p>
+      </div>
+
+      <!-- Value 2 -->
+      <div class="bg-surface-container rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+        <span class="material-symbols-outlined text-4xl text-primary block mb-3">star</span>
+        <h3 class="text-lg font-bold mb-2">Kualitas</h3>
+        <p class="text-on-surface-variant text-sm">Kami hanya menjual produk terbaik yang telah melalui quality check ketat.</p>
+      </div>
+
+      <!-- Value 3 -->
+      <div class="bg-surface-container rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+        <span class="material-symbols-outlined text-4xl text-primary block mb-3">people</span>
+        <h3 class="text-lg font-bold mb-2">Pemberdayaan</h3>
+        <p class="text-on-surface-variant text-sm">Mendukung ekonomi lokal dan memberdayakan UMKM lokal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section>
+    <h2 class="text-3xl font-extrabold mb-8 text-center text-primary">Tim Kami</h2>
+    <div class="bg-surface-container-low rounded-lg p-8 text-center">
+      <span class="material-symbols-outlined text-5xl text-tertiary block mb-3">group</span>
+      <!-- <h3 class="text-xl font-bold mb-2"></h3> -->
+      <p class="text-on-surface-variant mb-4">
+        Kami adalah tim yang terdiri dari para pecinta kuliner lokal yang berdedikasi untuk membawa kelezatan camilan tradisional Indonesia ke seluruh penjuru negeri.
+      </p>
+      <p class="text-on-surface-variant text-sm">
+        Bersama-sama, kami bekerja untuk membuat pengalaman berbelanja camilan lokal yang menyenangkan dan terpercaya.
+      </p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-primary rounded-lg p-8 text-center text-on-primary mb-20">
+    <h2 class="text-3xl font-extrabold mb-4">Bergabunglah dengan Kami</h2>
+    <p class="mb-6 text-lg opacity-90">
+      Rasakan pengalaman kuliner lokal yang autentik dan mendukung UMKM lokal Indonesia.
+    </p>
+    <a href="index.html" class="inline-block bg-on-primary text-primary px-8 py-3 rounded-md font-bold hover:opacity-90 transition-opacity active:scale-95">
+      Belanja Sekarang
+    </a>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-primary text-on-primary mt-auto w-full">
+  <div class="max-w-4xl mx-auto px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <!-- Brand Info -->
+      <div>
+        <h3 class="text-xl font-bold mb-3">Lokal-Lapak</h3>
+        <p class="text-sm opacity-90 mb-4">Snack Hub Terlengkap - Membawa camilan lokal dengan sentuhan modern ke meja Anda.</p>
+        <p class="text-xs opacity-75">© 2025 Lokal-Lapak. All rights reserved.</p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-bold mb-3 text-sm">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="opacity-90 hover:opacity-100 transition-opacity">Home</a></li>
+          <li><a href="about.html" class="opacity-90 hover:opacity-100 transition-opacity">About Us</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info -->
+      <div>
+        <h4 class="font-bold mb-3 text-sm">Contact Us</h4>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">mail</span>
+            <span>hanleysetiawan@gmail.com</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">phone</span>
+            <span>+62 812 3456 7890</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            <span>Surabaya, Indonesia</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="border-t border-on-primary border-opacity-20 pt-6">
+      <div class="flex flex-col md:flex-row justify-between items-center text-xs">
+        <p class="opacity-80"></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hide header when scrolling near footer
+  const header = document.getElementById('main-header');
+  const footer = document.querySelector('footer');
+  
+  window.addEventListener('scroll', function() {
+    if (!header || !footer) return;
+    
+    const footerRect = footer.getBoundingClientRect();
+    const distanceToFooter = footerRect.top - window.innerHeight;
+    
+    // Hide header when footer is within 50px from bottom of viewport
+    if (distanceToFooter < 50) {
+      header.style.opacity = '0';
+      header.style.pointerEvents = 'none';
+    } else {
+      header.style.opacity = '1';
+      header.style.pointerEvents = 'auto';
+    }
+  });
+</script>
+
+</body>
+</html>

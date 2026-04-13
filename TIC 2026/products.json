@@ -1,0 +1,408 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Basreng Pedas Daun Jeruk",
+      "price": 20000,
+      "weight": "250gr",
+      "category": "pedes",
+      "badge": "Super Pedas",
+      "badgeColor": "error",
+      "rating": "4.9/5",
+      "sold": 1500,
+      "image": "Image/basreng pedas.webp",
+      "description": "Cemilan pas buat nemenin nugas! Basreng (Bakso Goreng) super renyah dengan bumbu cabai asli yang nendang banget, ditambah aroma wangi daun jeruk yang seger. Sekali gigit susah berenti!",
+      "shipping": "Kilat",
+      "special": "Tanpa MSG",
+      "reviews": [
+        {
+          "name": "Anonymous",
+          "rating": 5,
+          "text": "Pedes Ultra Pro Max!"
+        },
+        {
+          "name": "Hahahehe",
+          "rating": 4,
+          "text": "Pas buat temen nonton bola. Crunchy-nya dapet, gak keras sama sekali."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Makaroni Balado Pedas",
+      "price": 17000,
+      "weight": "250gr",
+      "category": "pedes",
+      "badge": "Pedas Gacor",
+      "badgeColor": "error",
+      "rating": "4.9/5",
+      "sold": 3900,
+      "image": "Image/makaroni balado pedas.webp",
+      "description": "Makaroni lezat dengan balado tradisional Minangkabau. Rasanya gurih, pedes, dan bikin imut tapi nagih. Pembuatan manual dengan bumbu-bumbu pilihan.",
+      "shipping": "Kilat",
+      "special": "BBQ",
+      "reviews": [
+        {
+          "name": "Taylor Swift",
+          "rating": 5,
+          "text": "Autentik banget! Rasanya sama kayak di rumah orang tua aku di Brooklyn."
+        },
+        {
+          "name": "Intel Ultra",
+          "rating": 4,
+          "text": "Pedasnya pas, gak bikin nangis tapi tetep nendang. Cocok buat cemilan sambil kerja."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Kue Soes Coklat Premium",
+      "price": 12000,
+      "weight": "150gr",
+      "category": "manis",
+      "badge": "Coklat Leleh",
+      "badgeColor": "secondary",
+      "rating": "4.9/5",
+      "sold": 1000,
+      "image": "Image/soes coklat.webp",
+      "description": "Kue sus yang lembut dan lezat dengan filling coklat premium yang creamy. Dibuat fresh dari bahan-bahan berkualitas tinggi. Cocok buat hadiah atau snack pribadi.",
+      "shipping": "Kilat",
+      "special": "Bahan Premium",
+      "reviews": [
+        {
+          "name": "M~",
+          "rating": 5,
+          "text": "Super lembut dan coklat-nya creamy banget. Sekali makan bisa habis semuanya!"
+        },
+        {
+          "name": "Anonymous",
+          "rating": 5,
+          "text": "Bagus buat hadiah, packaging-nya juga rapi dan mewah."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Keripik Singkong Goreng Renyah",
+      "price": 35000,
+      "weight": "500gr",
+      "category": "kiloan",
+      "badge": "Say Cheese!",
+      "badgeColor": "tertiary",
+      "rating": "4.7/5",
+      "sold": 4100,
+      "image": "Image/keripik singkong keju.webp",
+      "description": "Keripik singkong yang digoreng dengan minyak berkualitas tinggi hingga renyah sempurna. Dibumbui dengan keju premium yang gurih dan lezat. Cocok untuk cemilan keluarga atau teman-teman.",
+      "shipping": "Kilat",
+      "special": "Minyak Sehat",
+      "reviews": [
+        {
+          "name": "Elon Musk",
+          "rating": 4,
+          "text": "Renyah dan gak berminyak banget. Baguslah untuk cemilan santai."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Salad Buah Mix Segar",
+      "price": 15000,
+      "weight": "120gr",
+      "category": "sehat",
+      "badge": "Natural & Sehat",
+      "badgeColor": "secondary",
+      "rating": "4.7/5",
+      "sold": 1200,
+      "image": "Image/salad buah.webp",
+      "description": "Salad buah segar dengan campuran buah-buahan pilihan seperti melon, semangka, anggur, dan kiwi. Disajikan dengan dressing yogurt yang creamy dan sedikit manis. Cocok untuk camilan sehat atau sebagai pelengkap sarapan.",
+      "shipping": "Kilat",
+      "special": "Low Fat Milk",
+      "reviews": [
+        {
+          "name": "Dr. Tirta",
+          "rating": 5,
+          "text": "Buah ZEGERRRRR"
+        },
+        {
+          "name": "Deddy Corbuzier",
+          "rating": 4,
+          "text": "👍👍👍"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Stik Keju Pedas",
+      "price": 20000,
+      "weight": "250gr",
+      "category": "pedes",
+      "badge": "Pedas Ringan",
+      "badgeColor": "error",
+      "rating": "4.8/5",
+      "sold": 2900,
+      "image": "Image/stik keju pedas.webp",
+      "description": "Stik keju pedas dengan tekstur renyah di luar dan lembut di dalam. Dibumbui dengan bumbu khas yang gurih dan sedikit pedas. Cocok sebagai lauk atau snack.",
+      "shipping": "Kilat",
+      "special": "Lembut & Gurih",
+      "reviews": [
+        {
+          "name": "Lovable Lovable",
+          "rating": 5,
+          "text": "Stik-nya empuk dan kejunya lezat. Bisa langsung dimakan atau ditambah sambal."
+        },
+        {
+          "name": "Moana",
+          "rating": 4,
+          "text": "Renyahnya pas, gak terlalu keras. Pedasnya juga enak, gak bikin nangis."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Cookies Mini Coklat",
+      "price": 20000,
+      "weight": "150gr (10 pcs)",
+      "category": "manis",
+      "badge": "Premium Quality",
+      "badgeColor": "secondary",
+      "rating": "4.9/5",
+      "sold": 1200,
+      "image": "Image/kukis mini coklat.webp",
+      "description": "Cookies mini dengan rasa coklat premium yang kaya. Teksturnya lembut di dalam dan sedikit renyah di luar. Cocok untuk camilan sehari-hari atau sebagai teman minum teh.",
+      "shipping": "Kilat",
+      "special": "Coklat Premium",
+      "reviews": [
+        {
+          "name": "Emak-Emak Hits",
+          "rating": 5,
+          "text": "ini coklat supeeeeer lumerrr, wajib coba deh, merk G gaada lawan guyyyss!!!"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Rengginang Keju",
+      "price": 20000,
+      "weight": "300gr",
+      "category": "kiloan",
+      "badge": "Renyah & Gurih",
+      "badgeColor": "tertiary",
+      "rating": "4.7/5",
+      "sold": 2100,
+      "image": "Image/rengginang keju.webp",
+      "description": "Rengginang keju dengan tekstur renyah dan rasa gurih. Dibuat dengan bahan-bahan berkualitas tinggi yang disajikan dengan keju premium.",
+      "shipping": "Kilat",
+      "special": "Keju Premium",
+      "reviews": [
+        {
+          "name": "Mas Joko",
+          "rating": 5,
+          "text": "Rengginangnya renyah dan kejunya lezat. Jadi inget masakan mama."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Putri Salju",
+      "price": 14000,
+      "weight": "100gr",
+      "category": "manis",
+      "badge": "Soft & Sweet",
+      "badgeColor": "secondary",
+      "rating": "4.8/5",
+      "sold": 2600,
+      "image": "Image/putri salju.webp",
+      "description": "Kue putri salju dengan tekstur lembut dan rasa manis yang pas. Dibuat dengan bahan-bahan berkualitas tinggi dan disajikan dengan taburan gula halus yang melimpah.",
+      "shipping": "Kilat",
+      "special": "Gula Alami",
+      "reviews": [
+        {
+          "name": "Wiwokdetok",
+          "rating": 5,
+          "text": "Putri saljunya empuk banget dan gula-nya ga terlalu manis di mulut. Recommended!"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Sambel Cakalan Dapur Bunda",
+      "price": 20000,
+      "weight": "250gr",
+      "category": "pedes",
+      "badge": "Super Pedas",
+      "badgeColor": "error",
+      "rating": "4.9/5",
+      "sold": 2000,
+      "image": "Image/sambel cakalan.webp",
+      "description": "Sambel Cakalan dengan rasa pedas yang menggigit dan aroma khas yang menggoda selera. Dibuat dengan bahan-bahan segar dan bumbu pilihan untuk memberikan sensasi pedas yang autentik. Cocok untuk menemani nasi hangat atau sebagai pelengkap hidangan favoritmu.",
+      "shipping": "Kilat",
+      "special": "Cabe Pilihan",
+      "reviews": [
+        {
+          "name": "Jensen Huang",
+          "rating": 5,
+          "text": "Pedes Ultra Pro Max!"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Sambel Chilli Oil Dapur Bunda",
+      "price": 25000,
+      "weight": "250gr",
+      "category": "pedes",
+      "badge": "Premium Spicy",
+      "badgeColor": "error",
+      "rating": "4.7/5",
+      "sold": 3500,
+      "image": "Image/sambel chilli oil.webp",
+      "description": "Sambel Chilli Oil dengan rasa pedas yang menggigit dan aroma khas yang menggoda selera. Dibuat dengan bahan-bahan segar dan bumbu pilihan untuk memberikan sensasi pedas yang autentik. Cocok untuk menemani nasi hangat atau sebagai pelengkap hidangan favoritmu.",
+      "shipping": "Kilat",
+      "special": "Cabe Pilihan",
+      "reviews": [
+        {
+          "name": "AHPEK Kopitiam",
+          "rating": 5,
+          "text": "Wajib Coba!"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Manisan Mangga",
+      "price": 18000,
+      "weight": "150gr",
+      "category": "sehat",
+      "badge": "Natural & Sehat",
+      "badgeColor": "secondary",
+      "rating": "4.7/5",
+      "sold": 1200,
+      "image": "Image/manisan mangga.webp",
+      "description": "Manisan mangga segar dengan tekstur lembut dan rasa manis yang pas. Dibuat dengan bahan-bahan berkualitas tinggi dan disajikan dengan taburan gula halus yang melimpah.",
+      "shipping": "Kilat",
+      "special": "Gula Alami",
+      "reviews": [
+        {
+          "name": "Fitra Eri",
+          "rating": 5,
+          "text": "Sangat Menarik!"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Kue Astor Kering",
+      "price": 22000,
+      "weight": "2200gr",
+      "category": "manis",
+      "badge": "Coklat Leleh",
+      "badgeColor": "secondary",
+      "rating": "4.8/5",
+      "sold": 2800,
+      "image": "Image/kue astor kering.webp",
+      "description": "Kue astor kering dengan rasa coklat yang lezat dan tekstur renyah. Dibuat dengan bahan-bahan berkualitas tinggi dan disajikan dengan taburan gula halus yang melimpah.",
+      "shipping": "Kilat",
+      "special": "Coklat Premium",
+      "reviews": [
+        {
+          "name": "David Brendi",
+          "rating": 4,
+          "text": "Coklatnya enak dan teksturnya renyah. Recommended!"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Kuping Gajah Manis",
+      "price": 35000,
+      "weight": "750gr",
+      "category": "kiloan",
+      "badge": "Mini Size!",
+      "badgeColor": "tertiary",
+      "rating": "4.7/5",
+      "sold": 4200,
+      "image": "Image/kuping gajah mini.webp",
+      "description": "Kuping gajah manis dengan ukuran mini yang praktis dan rasa manis yang lezat. Dibuat dengan bahan-bahan berkualitas tinggi dan disajikan dengan taburan gula halus yang melimpah.",
+      "shipping": "Kilat",
+      "special": "Gula Alami",
+      "reviews": [
+        {
+          "name": "Anonymous",
+          "rating": 4,
+          "text": "Menarik nih."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Kue Kacang Almond",
+      "price": 21000,
+      "weight": "180gr",
+      "category": "manis",
+      "badge": "Almond Crunch",
+      "badgeColor": "secondary",
+      "rating": "4.7/5",
+      "sold": 1500,
+      "image": "Image/kue kacang almond.webp",
+      "description": "Kue kacang almond dengan tekstur renyah dan rasa gurih yang lezat. Dibuat dengan bahan-bahan berkualitas tinggi dan disajikan dengan taburan kacang almond yang melimpah.",
+      "shipping": "Kilat",
+      "special": "Bahan Premium",
+      "reviews": [
+        {
+          "name": "Matematika 100",
+          "rating": 5,
+          "text": "Wenak rek!"
+        }
+      ]
+    },
+     {
+      "id": 16,
+      "name": "Keripik Tempe Sagu Pedas",
+      "price": 12000,
+      "weight": "250gr",
+      "category": "pedes",
+      "badge": "Pedas Nagih",
+      "badgeColor": "error",
+      "rating": "4.9/5",
+      "sold": 4200,
+      "image": "Image/keripik tempe pedas.webp",
+      "description": "Keripik tempe sagu pedas dengan tekstur renyah dan rasa gurih yang lezat. Dibuat dengan bahan-bahan berkualitas tinggi dan disajikan dengan bumbu pedas yang menggoda selera.",
+      "shipping": "Kilat",
+      "special": "Tanpa MSG",
+      "reviews": [
+        {
+          "name": "Mwehehe",
+          "rating": 5,
+          "text": "Wenak rek iki!"
+        },
+        {
+          "name": "Mas Lorem",
+          "rating": 4,
+          "text": "Mantul Mantap Betul."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Keripik Kentang BBQ Pedas",
+      "price": 32000,
+      "weight": "500gr",
+      "category": "kiloan",
+      "badge": "BBQ & Pedas",
+      "badgeColor": "tertiary",
+      "rating": "4.9/5",
+      "sold": 3900,
+      "image": "Image/keripik kentang bbq.webp",
+      "description": "Keripik kentang yang digoreng dengan minyak berkualitas tinggi hingga renyah sempurna. Dibumbui dengan keju premium yang gurih dan lezat. Cocok untuk cemilan keluarga atau teman-teman.",
+      "shipping": "Kilat",
+      "special": "Minyak Sehat",
+      "reviews": [
+        {
+          "name": "WindowsPlayz",
+          "rating": 5,
+          "text": "POTATOOESSS!!!"
+        }
+      ]
+    }
+  ]
+}

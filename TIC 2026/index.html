@@ -1,0 +1,2552 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lokal-Lapak | Snack Hub Terlengkap</title>
+  <link rel="shortcut icon" href="favicon_io/faviconn.ico" type="image/x-icon" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind Config -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-error-container": "#520c00",
+            "on-tertiary-fixed-variant": "#665500",
+            "primary-fixed": "#fd8b00",
+            "on-primary-fixed": "#180800",
+            "on-surface-variant": "#5b5c5b",
+            "on-tertiary-container": "#5b4b00",
+            "primary": "#8c4a00",
+            "on-secondary-fixed": "#6e021d",
+            "surface-container": "#e8e8e7",
+            "on-background": "#2e2f2f",
+            "on-tertiary-fixed": "#453900",
+            "background": "#f7f6f5",
+            "primary-fixed-dim": "#ea8000",
+            "secondary": "#a53141",
+            "on-primary-container": "#442100",
+            "secondary-fixed-dim": "#ffaeb2",
+            "inverse-on-surface": "#9d9d9c",
+            "on-secondary": "#ffefef",
+            "secondary-container": "#ffc2c5",
+            "error": "#b02500",
+            "on-error": "#ffefec",
+            "surface-tint": "#8c4a00",
+            "primary-container": "#fd8b00",
+            "outline-variant": "#adadac",
+            "on-surface": "#2e2f2f",
+            "surface": "#f7f6f5",
+            "on-primary": "#fff0e7",
+            "surface-dim": "#d4d4d4",
+            "on-primary-fixed-variant": "#512800",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed-dim": "#efc900",
+            "secondary-dim": "#952436",
+            "error-dim": "#b92902",
+            "on-secondary-fixed-variant": "#962637",
+            "error-container": "#f95630",
+            "tertiary-fixed": "#ffd709",
+            "tertiary-dim": "#5e4e00",
+            "tertiary": "#6c5a00",
+            "outline": "#767776",
+            "surface-container-highest": "#dcdddc",
+            "on-secondary-container": "#891b2e",
+            "surface-container-low": "#f1f1f0",
+            "surface-bright": "#f7f6f5",
+            "on-tertiary": "#fff2cd",
+            "inverse-surface": "#0d0e0e",
+            "surface-container-high": "#e2e2e1",
+            "tertiary-container": "#ffd709",
+            "primary-dim": "#7b4000",
+            "inverse-primary": "#fd8b00",
+            "surface-variant": "#dcdddc",
+            "secondary-fixed": "#ffc2c5"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "headline": ["Plus Jakarta Sans"],
+            "body": ["Be Vietnam Pro"],
+            "label": ["Be Vietnam Pro"]
+          }
+        },
+      },
+    }
+  </script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cstyle%3E.icon-food { fill: %23d4d4d4; opacity: 0.15; } .icon-food-dark { fill: %23adadac; opacity: 0.08; }%3C/style%3E%3C/defs%3E%3Ctext x='20' y='60' class='icon-food' font-size='40' font-family='Arial'%3E🍔%3C/text%3E%3Ctext x='120' y='40' class='icon-food-dark' font-size='35' font-family='Arial'%3E🍕%3C/text%3E%3Ctext x='80' y='120' class='icon-food' font-size='38' font-family='Arial'%3E🌮%3C/text%3E%3Ctext x='30' y='150' class='icon-food-dark' font-size='36' font-family='Arial'%3E🍟%3C/text%3E%3Ctext x='140' y='160' class='icon-food' font-size='34' font-family='Arial'%3E🎂%3C/text%3E%3Ctext x='150' y='80' class='icon-food-dark' font-size='37' font-family='Arial'%3E🍪%3C/text%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      background-repeat: repeat;
+      background-attachment: fixed;
+    }
+    h1, h2, h3 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glass-sheet {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+    }
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+      .glass-sheet {
+        background: rgba(255, 255, 255, 0.85);
+      }
+    }
+    
+    /* ========== HERO SECTION ANIMATIONS ========== */
+    .hero-badge {
+      animation: badgePulse 2s ease-in-out infinite;
+    }
+    @keyframes badgePulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(253, 139, 0, 0.3);
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 6px rgba(253, 139, 0, 0);
+      }
+    }
+    
+    .hero-heading {
+      animation: fadeInSlideLeft 0.8s ease-out;
+    }
+    @keyframes fadeInSlideLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .hero-description {
+      animation: fadeInSlideLeft 1s ease-out 0.2s both;
+    }
+    
+    .hero-button {
+      animation: fadeInSlideLeft 1.2s ease-out 0.4s both;
+    }
+    
+    .hero-icon {
+      animation: floatRotate 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes floatRotate {
+      0%, 100% {
+        transform: translateY(0px) rotate(12deg);
+      }
+      25% {
+        transform: translateY(-12px) rotate(12deg);
+      }
+      50% {
+        transform: translateY(-20px) rotate(12deg);
+      }
+      75% {
+        transform: translateY(-12px) rotate(12deg);
+      }
+    }
+    
+    .cart-modal {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      pointer-events: none;
+      position: fixed;
+      inset: 0;
+      z-index: 110;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+    .cart-modal.active {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .toast-notification {
+      position: fixed;
+      bottom: 8rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 75;
+      background: #8c4a00;
+      color: #fff0e7;
+      padding: 1rem 1.5rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 12px rgba(140, 74, 0, 0.3);
+      font-weight: 600;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .toast-notification.show {
+      animation: toastFadeInOut 1s ease-in-out;
+    }
+    @keyframes toastFadeInOut {
+      0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+      }
+      10% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+      90% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+      }
+    }
+    /* Cart Item Animations */
+    .cart-item {
+      opacity: 1;
+      max-height: 200px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .cart-item.removing {
+      opacity: 0;
+      max-height: 0;
+      margin-bottom: 0;
+      transition: all 0.3s ease;
+    }
+    .cart-item-quantity {
+      display: inline-flex;
+      transition: all 0.2s ease;
+    }
+    .cart-item-quantity.updating {
+      transform: scale(1.08);
+    }
+    /* Empty Cart Message Animation */
+    .empty-cart-message {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+      display: none;
+    }
+    .empty-cart-message.show {
+      display: flex !important;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .cart-modal-backdrop {
+      display: none;
+    }
+    .cart-modal.active .cart-modal-backdrop {
+      display: block;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    /* Custom Scrollbar Styles */
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f7f6f5;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #fd8b00;
+      border-radius: 10px;
+      transition: background 0.3s ease;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ea8000;
+    }
+    /* Firefox Scrollbar */
+    * {
+      scrollbar-color: #fd8b00 #f7f6f5;
+      scrollbar-width: thin;
+    }
+    /* Search Modal Styles */
+    .search-modal {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      pointer-events: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 11rem;
+      z-index: 60;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+    }
+    .search-modal.active {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .search-modal-content {
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 11rem);
+      background: #f7f6f5;
+    }
+    .search-header {
+      flex-shrink: 0;
+      padding: 1rem 1.5rem;
+      background: #f7f6f5;
+      position: sticky;
+      top: 0;
+      z-index: 61;
+      border-bottom: 1px solid #dcdddc;
+    }
+    .search-input-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .search-input-wrapper input {
+      flex: 1;
+      background: #e8e8e7;
+      border: 1px solid #adadac;
+      border-radius: 0.5rem;
+      padding: 0.75rem 1rem;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 0.875rem;
+      color: #2e2f2f;
+      transition: all 0.2s ease;
+    }
+    .search-input-wrapper input::placeholder {
+      color: #5b5c5b;
+    }
+    .search-input-wrapper input:focus {
+      outline: none;
+      background: #fff0e7;
+      border-color: #8c4a00;
+      box-shadow: 0 0 0 3px rgba(140, 74, 0, 0.1);
+    }
+    .search-input-wrapper button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #8c4a00;
+      font-size: 1.5rem;
+      padding: 0.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.2s ease;
+    }
+    .search-input-wrapper button:hover {
+      opacity: 0.7;
+    }
+    .search-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.5rem;
+      padding-bottom: 2rem;
+    }
+    .search-section {
+      margin-bottom: 2rem;
+    }
+    .search-section-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #5b5c5b;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .recent-searches {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .recent-search-tag {
+      background: #dcdddc;
+      color: #2e2f2f;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 1px solid #adadac;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .recent-search-tag:hover {
+      background: #fd8b00;
+      color: #fff0e7;
+      border-color: #fd8b00;
+    }
+    .popular-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .popular-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+      background: white;
+      border: 1px solid #dcdddc;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      align-items: center;
+    }
+    .popular-item:hover {
+      background: #f1f1f0;
+      border-color: #fd8b00;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(140, 74, 0, 0.1);
+    }
+    .popular-item-rank {
+      min-width: 2.5rem;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #fd8b00;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .popular-item-image {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: #e8e8e7;
+    }
+    .popular-item-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .popular-item-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .popular-item-name {
+      font-weight: 600;
+      color: #2e2f2f;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 0.875rem;
+    }
+    .popular-item-rating {
+      font-size: 0.75rem;
+      color: #5b5c5b;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .category-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .category-card {
+      padding: 1.5rem;
+      border-radius: 1rem;
+      color: white;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      text-align: center;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .category-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    .category-card .material-symbols-outlined {
+      font-size: 2rem;
+    }
+    .search-results {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+    .search-result-item {
+      background: white;
+      border-radius: 1rem;
+      padding: 1rem;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 1px solid #dcdddc;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+    }
+    .search-result-item:hover {
+      border-color: #fd8b00;
+      box-shadow: 0 4px 12px rgba(140, 74, 0, 0.15);
+      transform: translateY(-2px);
+    }
+    .search-result-image {
+      width: 100%;
+      height: 120px;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      margin-bottom: 0.75rem;
+      background: #e8e8e7;
+    }
+    .search-result-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .search-result-name {
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: #2e2f2f;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .search-result-price {
+      color: #8c4a00;
+      font-weight: 700;
+      font-size: 0.875rem;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    /* ========== DELIVERY MODAL STYLES ========== */
+    .delivery-modal {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      pointer-events: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 150;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: flex-end;
+      overflow-y: auto;
+    }
+    .delivery-modal.active {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .delivery-modal-content {
+      background: white;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      border-radius: 2rem 2rem 0 0;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.12);
+      animation: slideUpDelivery 0.3s ease;
+    }
+    @keyframes slideUpDelivery {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .delivery-header {
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dcdddc;
+      position: sticky;
+      top: 0;
+      background: white;
+      z-index: 81;
+    }
+    .delivery-header h3 {
+      margin: 0;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #2e2f2f;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .delivery-close-btn {
+      background: #e8e8e7;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      color: #2e2f2f;
+    }
+    .delivery-close-btn:hover {
+      background: #dcdddc;
+      transform: scale(1.05);
+    }
+    .delivery-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .delivery-form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .delivery-form-group label {
+      font-weight: 600;
+      color: #2e2f2f;
+      font-size: 0.95rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .delivery-form-group label .required {
+      color: #b02500;
+      margin-left: 0.25rem;
+    }
+    .delivery-form-group input,
+    .delivery-form-group textarea,
+    .delivery-form-group select {
+      padding: 0.75rem 1rem;
+      border: 1.5px solid #dcdddc;
+      border-radius: 0.75rem;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 0.95rem;
+      color: #2e2f2f;
+      transition: all 0.2s ease;
+      background: #f7f6f5;
+    }
+    .delivery-form-group input::placeholder,
+    .delivery-form-group textarea::placeholder {
+      color: #adadac;
+    }
+    .delivery-form-group input:focus,
+    .delivery-form-group textarea:focus,
+    .delivery-form-group select:focus {
+      outline: none;
+      background: #fff0e7;
+      border-color: #8c4a00;
+      box-shadow: 0 0 0 3px rgba(140, 74, 0, 0.1);
+    }
+    .delivery-form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .delivery-form-group textarea {
+      min-height: 100px;
+      resize: vertical;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .delivery-footer {
+      position: sticky;
+      bottom: 0;
+      padding: 1.5rem;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid #dcdddc;
+      z-index: 81;
+      display: flex;
+      gap: 1rem;
+    }
+    .delivery-footer button {
+      flex: 1;
+      padding: 1rem;
+      border: none;
+      border-radius: 0.75rem;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .delivery-btn-cancel {
+      background: #e8e8e7;
+      color: #2e2f2f;
+      border: 1px solid #dcdddc;
+    }
+    .delivery-btn-cancel:hover {
+      background: #dcdddc;
+    }
+    .delivery-btn-next {
+      background: linear-gradient(to right, #8c4a00, #fd8b00);
+      color: white;
+    }
+    .delivery-btn-next:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(140, 74, 0, 0.3);
+    }
+    .delivery-btn-next:active {
+      transform: scale(0.98);
+    }
+    .delivery-info-box {
+      background: rgba(253, 139, 0, 0.08);
+      border-left: 4px solid #fd8b00;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      font-size: 0.875rem;
+      color: #5b5c5b;
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+    }
+    .delivery-info-box span {
+      flex-shrink: 0;
+      color: #8c4a00;
+      font-size: 1.25rem;
+    }
+    /* Payment Modal Styles */
+    .payment-modal {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      pointer-events: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 200;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: flex-end;
+      overflow-y: auto;
+    }
+    .payment-modal.active {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .payment-modal-content {
+      background: white;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      border-radius: 2rem 2rem 0 0;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.12);
+      animation: slideUpPayment 0.3s ease;
+    }
+    @keyframes slideUpPayment {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .payment-header {
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dcdddc;
+      position: sticky;
+      top: 0;
+      background: white;
+      z-index: 81;
+    }
+    .payment-header h3 {
+      margin: 0;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #2e2f2f;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .payment-close-btn {
+      background: #e8e8e7;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      color: #2e2f2f;
+    }
+    .payment-close-btn:hover {
+      background: #dcdddc;
+      transform: scale(1.05);
+    }
+    .payment-body {
+      padding: 1.5rem;
+    }
+    .payment-summary {
+      background: rgba(253, 139, 0, 0.1);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .payment-summary::after {
+      content: '';
+      position: absolute;
+      right: -16px;
+      bottom: -16px;
+      width: 96px;
+      height: 96px;
+      background: rgba(253, 139, 0, 0.2);
+      border-radius: 50%;
+      filter: blur(32px);
+    }
+    .payment-summary-left {
+      position: relative;
+      z-index: 10;
+    }
+    .payment-summary-label {
+      color: #5b5c5b;
+      font-weight: 500;
+      font-size: 0.875rem;
+      margin-bottom: 0.25rem;
+    }
+    .payment-summary-amount {
+      color: #8c4a00;
+      font-weight: 700;
+      font-size: 1.5rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .payment-summary-icon {
+      color: #fd8b00;
+      font-size: 2rem;
+    }
+    .payment-section {
+      margin-bottom: 2rem;
+    }
+    .payment-section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+    .payment-section-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: bold;
+      font-size: 1.125rem;
+      color: #2e2f2f;
+    }
+    .payment-recommended-badge {
+      font-size: 0.75rem;
+      font-weight: bold;
+      background: rgba(253, 139, 0, 0.2);
+      color: #8c4a00;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .payment-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .payment-option {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      background: white;
+      border: 2px solid #dcdddc;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .payment-option:hover {
+      border-color: rgba(253, 139, 0, 0.3);
+    }
+    .payment-option input[type="radio"] {
+      cursor: pointer;
+      margin-right: 1rem;
+      width: 20px;
+      height: 20px;
+      accent-color: #8c4a00;
+    }
+    .payment-option-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #e8e8e7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1rem;
+      flex-shrink: 0;
+      color: #8c4a00;
+    }
+    .payment-option-info {
+      flex: 1;
+    }
+    .payment-option-name {
+      font-weight: 600;
+      color: #2e2f2f;
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+    }
+    .payment-option-desc {
+      font-size: 0.75rem;
+      color: #5b5c5b;
+    }
+    .payment-bank-option {
+      display: flex;
+      flex-direction: column;
+      padding: 1.25rem;
+      background: #f1f1f0;
+      border: 2px solid transparent;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .payment-bank-option:hover {
+      background: #e2e2e1;
+    }
+    .payment-bank-option input[type="radio"]:checked + .payment-bank-header {
+      color: #8c4a00;
+    }
+    .payment-bank-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+    .payment-bank-name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: -0.03em;
+    }
+    .payment-bank-type {
+      font-size: 0.75rem;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 0.125rem 0.5rem;
+      border-radius: 0.25rem;
+      font-weight: 500;
+      color: #5b5c5b;
+      margin-left: 0.5rem;
+    }
+    .payment-bank-desc {
+      font-size: 0.875rem;
+      color: #5b5c5b;
+    }
+    .payment-security {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      text-align: center;
+      padding: 1rem;
+      color: #adadac;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+    .payment-footer {
+      position: sticky;
+      bottom: 0;
+      padding: 1.5rem;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid #dcdddc;
+      z-index: 81;
+    }
+    .payment-confirm-btn {
+      width: 100%;
+      padding: 1rem;
+      background: linear-gradient(to right, #8c4a00, #fd8b00);
+      color: white;
+      border: none;
+      border-radius: 0.75rem;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .payment-confirm-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(140, 74, 0, 0.3);
+    }
+    .payment-confirm-btn:active {
+      transform: scale(0.98);
+    }
+    /* Ajukan Modal Styles */
+    .ajukan-modal {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      pointer-events: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 70;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .ajukan-modal.active {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .ajukan-modal-content {
+      background: white;
+      border-radius: 2rem;
+      max-width: 500px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+      animation: slideUp 0.3s ease;
+    }
+    @keyframes slideUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .ajukan-modal-header {
+      padding: 2rem 1.5rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dcdddc;
+    }
+    .ajukan-modal-header h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #2e2f2f;
+      margin: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .ajukan-modal-close {
+      background: #e8e8e7;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      color: #2e2f2f;
+    }
+    .ajukan-modal-close:hover {
+      background: #dcdddc;
+      transform: scale(1.05);
+    }
+    .ajukan-modal-body {
+      padding: 1.5rem;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      color: #2e2f2f;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .form-group label .required {
+      color: #b02500;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #adadac;
+      border-radius: 0.75rem;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 0.95rem;
+      color: #2e2f2f;
+      transition: all 0.2s ease;
+      box-sizing: border-box;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: #5b5c5b;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #8c4a00;
+      box-shadow: 0 0 0 3px rgba(140, 74, 0, 0.1);
+      background: #fff0e7;
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .form-group select {
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      padding-right: 2.5rem;
+      appearance: none;
+    }
+    .rating-group {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .rating-star {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.75rem;
+      color: #adadac;
+      transition: all 0.2s ease;
+      padding: 0;
+    }
+    .rating-star:hover,
+    .rating-star.active {
+      color: #ffd709;
+      transform: scale(1.1);
+    }
+    .form-submit-btn {
+      width: 100%;
+      padding: 1rem;
+      background: linear-gradient(to right, #8c4a00, #fd8b00);
+      color: white;
+      border: none;
+      border-radius: 0.75rem;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .form-submit-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(140, 74, 0, 0.3);
+    }
+    .form-submit-btn:active {
+      transform: scale(0.98);
+    }
+    /* Cart Badge Styles */
+    #cart-badge {
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(176, 37, 0, 0.3);
+    }
+    #cart-badge:not(.hidden) {
+      animation: badgePop 0.5s ease-out;
+    }
+    @keyframes badgePop {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    #cart-badge.update {
+      animation: badgeBounce 0.4s ease-out;
+    }
+    @keyframes badgeBounce {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.25);
+      }
+    }
+    /* View Toggle Styles - Products */
+    #product-list.product-list-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+    #product-list.product-list-layout .product-card {
+      display: flex;
+    }
+    #product-list.product-grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1.5rem;
+      align-items: start;
+      align-content: start;
+      margin-top: 1rem;
+    }
+    #product-list.product-grid-layout .product-card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      align-items: stretch;
+      margin-top: 0;
+    }
+    #product-list.product-grid-layout .product-card h3 {
+      height: 2.5rem;
+      overflow: hidden;
+      margin: 0;
+    }
+    @media (max-width: 768px) {
+      #product-list.product-grid-layout {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+    }
+    
+    /* View Toggle Styles - Orders */
+    #recent-orders-container.order-grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1.5rem;
+    }
+    #recent-orders-container.order-list-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    #recent-orders-container.order-list-layout > div {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+      background: white;
+      border: 1px solid #dcdddc;
+      border-radius: 1rem;
+      align-items: center;
+      position: relative;
+    }
+    #recent-orders-container.order-list-layout > div > div:first-child {
+      width: 100px;
+      height: 100px;
+      flex-shrink: 0;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      background: #e8e8e7;
+      position: relative;
+    }
+    #recent-orders-container.order-list-layout > div > div:first-child img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #recent-orders-container.order-list-layout > div > div:last-child {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    #recent-orders-container.order-list-layout > div .order-list-date {
+      font-size: 0.75rem;
+      color: #5b5c5b;
+    }
+    #recent-orders-container.order-list-layout > div .order-list-name {
+      font-weight: 600;
+      color: #8c4a00;
+      font-size: 0.95rem;
+      line-height: 1.2;
+    }
+    #recent-orders-container.order-list-layout > div .order-list-status {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      width: fit-content;
+    }
+    #recent-orders-container.order-list-layout > div .order-list-buttons {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    #recent-orders-container.order-list-layout > div .order-list-buttons button {
+      flex: 1;
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 0.5rem;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    #recent-orders-container.order-list-layout > div .order-list-buttons .order-btn-detail {
+      background: #e8e8e7;
+      color: #2e2f2f;
+      border: 1px solid #dcdddc;
+    }
+    #recent-orders-container.order-list-layout > div .order-list-buttons .order-btn-detail:hover {
+      background: #dcdddc;
+    }
+    #recent-orders-container.order-list-layout > div .order-list-buttons .order-btn-buy {
+      background: #8c4a00;
+      color: white;
+    }
+    #recent-orders-container.order-list-layout > div .order-list-buttons .order-btn-buy:hover {
+      background: #7b4000;
+    }
+    @media (max-width: 768px) {
+      #product-list.product-grid-layout {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+      #recent-orders-container.order-list-layout > div {
+        flex-direction: column;
+      }
+      #recent-orders-container.order-list-layout > div > div:first-child {
+        width: 100%;
+      }
+    }
+    
+    /* ========== SPLASH SCREEN ========== */
+    .splash-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    
+    .splash-screen.hide {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    
+    .splash-content {
+      text-align: center;
+      animation: splash-bounce 0.8s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .splash-logo {
+      margin-bottom: 1.5rem;
+      animation: splash-float 2s ease-in-out infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .splash-logo-img {
+      width: 140px;
+      height: 140px;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+    }
+    
+    .splash-content h2 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #8c4a00;
+      margin: 0;
+    }
+    
+    .splash-content p {
+      color: #fd8b00;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+    
+    /* Loader Animation */
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 4px solid rgba(253, 139, 0, 0.2);
+      border-top-color: #fd8b00;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 1rem auto 0;
+    }
+    
+    @keyframes splash-bounce {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes splash-float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    /* ========== BUY SUCCESS SPLASH ========== */
+    .buy-success-splash {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9998;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    
+    .buy-success-splash.hide {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    
+    .buy-success-content {
+      text-align: center;
+      animation: success-bounce 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .buy-success-icon {
+      font-size: 5rem;
+      color: #8c4a00;
+      margin-bottom: 1rem;
+      animation: success-scale 0.6s ease;
+    }
+    
+    .buy-success-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #8c4a00;
+      margin: 0 0 0.5rem 0;
+    }
+    
+    .buy-success-subtitle {
+      font-size: 1rem;
+      color: #fd8b00;
+      margin: 0;
+    }
+    
+    @keyframes success-bounce {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes success-scale {
+      0% {
+        transform: scale(0) rotate(-45deg);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1) rotate(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface min-h-screen pb-0 flex flex-col">
+
+<!-- ============ SPLASH SCREEN ============ -->
+<div id="splash-screen" class="splash-screen">
+  <div class="splash-content">
+    <div class="splash-logo">
+      <img src="favicon_io/LOGO LokalLapak.png" alt="Lokal-Lapak" class="splash-logo-img">
+    </div>
+    <h2 class="text-2xl font-bold text-[#fff0e7]">Lokal-Lapak</h2>
+    <p class="text-[#ffdfce] mt-2">Snack Hub Terlengkap</p>
+    <div class="loader mt-6"></div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header id="main-header" class="bg-[#f7f6f5] dark:bg-stone-900 sticky top-0 z-40 transition-all">
+  <div class="flex flex-col w-full px-6 py-4 max-w-7xl mx-auto">
+    <div class="flex justify-between items-center mb-4">
+      <h1 class="text-2xl font-bold tracking-tight text-[#8c4a00] dark:text-orange-500">Lokal-Lapak</h1>
+      <div class="flex items-center gap-3">
+        <button id="view-toggle" class="material-symbols-outlined text-primary hover:opacity-80 transition-opacity" title="Ubah tampilan">view_agenda</button>
+        <button id="search-btn" class="material-symbols-outlined text-primary hover:opacity-80 transition-opacity">search</button>
+      </div>
+    </div>
+    
+    <!-- Category Pills - Only visible on Beranda page -->
+    <div id="category-section" class="flex gap-3 overflow-x-auto pb-2 -mx-6 px-6">
+      <button class="category-filter whitespace-nowrap px-6 py-2 rounded-full bg-primary-container text-on-primary-container font-semibold text-sm transition-transform active:scale-95 category-active" data-category="semua">#Semua</button>
+      <button class="category-filter whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-stone-100 transition-colors" data-category="pedes">#PedasNampol</button>
+      <button class="category-filter whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-stone-100 transition-colors" data-category="manis">#Manis</button>
+      <button class="category-filter whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-stone-100 transition-colors" data-category="sehat">#Sehat</button>
+      <button class="category-filter whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-stone-100 transition-colors" data-category="kiloan">#Kiloan</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MAIN CONTENT ============ -->
+<main class="px-6 pt-4 max-w-4xl mx-auto space-y-8 flex-1 w-full">
+
+  <!-- ========== BERANDA PAGE ========== -->
+  <div id="beranda-page" class="page-section active">
+    <!-- Hero Section -->
+    <section class="bg-surface-container-low rounded-lg p-6 flex items-center justify-between overflow-hidden relative">
+      <div class="z-10 w-2/3">
+        <span class="hero-badge inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-bold mb-2 tracking-wide">FLASH SALE</span>
+        <h2 class="hero-heading text-3xl font-extrabold text-primary leading-tight mb-3">Snack Lokal,<br/>Rasa Internasional.</h2>
+        <p class="hero-description text-on-surface-variant text-sm mb-4">Kami menghadirkan camilan tradisional dengan sentuhan modern.</p>
+        <button class="hero-button bg-primary text-white px-6 py-3 rounded-md font-bold text-sm shadow-sm active:scale-95 transition-transform" onclick="openSearchModal()">Cek Sekarang</button>
+      </div>
+      <div class="hero-icon absolute -right-8 -bottom-4 w-48 h-48 opacity-90 flex items-center justify-center">
+        <span class="material-symbols-outlined text-[200px] text-primary-container" style="font-variation-settings: 'FILL' 1;">fastfood</span>
+      </div>
+    </section>
+
+    <!-- Product List -->
+    <div id="product-list" class="product-list-layout space-y-10">
+      <!-- Products will be loaded dynamically from products.json -->
+    </div>
+  </div>
+
+  <!-- ========== KATEGORI PAGE ========== -->
+  <div id="kategori-page" class="page-section">
+    <section class="text-center mb-8">
+      <h2 class="text-4xl font-extrabold tracking-tight text-on-background mb-2">Pilih Kategori</h2>
+      <p class="text-on-surface-variant mb-6">Jajanan apa yang kamu cari hari ini?</p>
+      
+      <div class="grid grid-cols-2 gap-4 mb-12">
+        <div class="bg-gradient-to-br from-[#fd8b00] to-[#ea8000] rounded-2xl p-6 text-white cursor-pointer hover:shadow-lg transition-all" onclick="showPage('beranda')">
+          <span class="material-symbols-outlined text-4xl block mb-2">local_fire_department</span>
+          <span class="text-lg font-bold block">#PedasNampol</span>
+        </div>
+        
+        <div class="bg-gradient-to-br from-[#ffd709] to-[#efc900] rounded-2xl p-6 text-[#5b4b00] cursor-pointer hover:shadow-lg transition-all" onclick="showPage('beranda')">
+          <span class="material-symbols-outlined text-4xl block mb-2">cake</span>
+          <span class="text-lg font-bold block">#Manis</span>
+        </div>
+        
+        <div class="bg-gradient-to-br from-[#4CAF50] to-[#45a049] rounded-2xl p-6 text-white cursor-pointer hover:shadow-lg transition-all" onclick="showPage('beranda')">
+          <span class="material-symbols-outlined text-4xl block mb-2">eco</span>
+          <span class="text-lg font-bold block">#Sehat</span>
+        </div>
+        
+        <div class="bg-gradient-to-br from-[#a53141] to-[#952436] rounded-2xl p-6 text-white cursor-pointer hover:shadow-lg transition-all" onclick="showPage('beranda')">
+          <span class="material-symbols-outlined text-4xl block mb-2">shopping_bag</span>
+          <span class="text-lg font-bold block">#Kiloan</span>
+        </div>
+      </div>
+
+      <section class="bg-surface-container-low rounded-2xl p-8 relative overflow-hidden">
+        <div class="relative z-10 max-w-lg mx-auto">
+          <span class="inline-block bg-tertiary-container text-on-tertiary-container text-xs font-bold px-3 py-1 rounded-full mb-4">JAJANAN NGGAK KETEMU?</span>
+          <h3 class="text-2xl font-extrabold text-primary mb-2">Ajukan Jajananmu</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-4">Belum nemu jajanan daerah asalmu? Kasih tau kami, biar kami carikan!</p>
+          <button onclick="openSubmitSnackModal()" class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity active:scale-95 duration-200">
+            Ajukan Jajanan
+          </button>
+        </div>
+       <div class="absolute right-[-20px] bottom-[-20px] opacity-10 pointer-events-none">
+          <span class="material-symbols-outlined text-[180px]">storefront</span>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- ========== PESANAN PAGE ========== -->
+  <div id="pesanan-page" class="page-section">
+    <section>
+      <div class="mb-8">
+        <h2 class="text-4xl font-extrabold text-on-surface tracking-tight mb-2">Riwayat Pesanan</h2>
+        <p class="text-on-surface-variant">Pantau pesananmu di sini</p>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-lg font-bold text-primary mb-4">Pesanan Terakhir</h3>
+        
+        <!-- Product Cards Grid -->
+        <div id="recent-orders-container" class="order-grid-layout">
+          <!-- Orders will be rendered here by JavaScript -->
+          <p class="text-center text-on-surface-variant py-8">Memuat pesanan...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Referral Section -->
+    <section class="mt-12 opacity-50 pointer-events-none">
+      <div class="bg-surface-container-low rounded-2xl p-8 relative overflow-hidden">
+        <div class="absolute inset-0 flex items-center justify-center z-20 rounded-2xl">
+          <div class="bg-black/60 rounded-lg px-6 py-3 text-white font-bold text-center">Coming Soon</div>
+        </div>
+        <div class="relative z-10">
+          <span class="inline-block bg-tertiary-container text-on-tertiary-container text-xs font-bold px-3 py-1 rounded-full mb-4">REFERRAL PROGRAM</span>
+          <h3 class="text-2xl font-extrabold text-primary mb-2">Ajak Temen Jajan</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Makin rame makin seru! Dapatkan voucher diskon 50% setiap kali temanmu pertama kali jajan di Lokal-Lapak.</p>
+          
+          <!-- Referral Code Section -->
+          <div class="bg-white rounded-lg p-4 mb-6 border border-outline-variant">
+            <p class="text-xs text-on-surface-variant font-semibold mb-2">Kode Referral Kamu:</p>
+            <div class="flex items-center gap-3">
+              <div class="flex-1 bg-primary-fixed text-on-primary-fixed px-4 py-3 rounded-lg font-headline font-bold text-lg tracking-widest" id="referral-code-display">
+                Loading...
+              </div>
+              <button id="copy-referral-btn" class="bg-primary text-on-primary px-4 py-3 rounded-lg font-bold flex items-center gap-2 hover:opacity-90 active:scale-95 transition-all" title="Salin kode" disabled>
+                <span class="material-symbols-outlined">content_copy</span>
+                <span class="hidden sm:inline">Salin</span>
+              </button>
+            </div>
+            <p class="text-xs text-on-surface-variant mt-2">Bagikan kode ini ke temen-temenmu atau gunakan tombol di bawah untuk berbagi langsung.</p>
+          </div>
+
+          <!-- Share Buttons -->
+          <div class="flex gap-3 flex-col sm:flex-row">
+            <button id="whatsapp-share-btn" class="flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-md font-bold text-sm shadow-lg hover:brightness-110 active:scale-95 transition-all" disabled>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">share</span>
+              Bagikan WhatsApp
+            </button>
+            <button id="copy-link-btn" class="flex items-center justify-center gap-2 bg-secondary text-on-secondary px-6 py-3 rounded-md font-bold text-sm shadow-lg hover:opacity-90 active:scale-95 transition-all" disabled>
+              <span class="material-symbols-outlined">link</span>
+              Salin Link
+            </button>
+          </div>
+
+          <!-- Referral Stats -->
+          <div class="grid grid-cols-2 gap-4 mt-6">
+            <div class="bg-white rounded-lg p-4 text-center border border-outline-variant">
+              <p class="text-2xl font-bold text-primary" id="referral-count">0</p>
+              <p class="text-xs text-on-surface-variant">Teman Terundang</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 text-center border border-outline-variant">
+              <p class="text-2xl font-bold text-secondary" id="referral-success-count">0</p>
+              <p class="text-xs text-on-surface-variant">Berhasil Jajan</p>
+            </div>
+          </div>
+
+          <!-- Discount Info -->
+          <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-4 mt-6 border border-primary/20">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">local_offer</span>
+              <div class="flex-1">
+                <p class="text-sm font-bold text-on-surface">Diskon Progresif</p>
+                <p class="text-xs text-on-surface-variant">
+                  <span id="current-discount">10%</span> sekarang • 
+                  <span id="next-discount-milestone">Naik 10% di 10 orang berhasil</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute right-[-20px] bottom-[-20px] opacity-10 pointer-events-none">
+          <span class="material-symbols-outlined text-[180px]">group</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="fixed bottom-4 left-0 right-0 w-[calc(100%-2rem)] mx-auto z-50 flex justify-around items-center h-20 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl rounded-xl shadow-[0_8px_32px_rgba(46,47,47,0.06)] nav-container" style="z-index: 100;">
+  <div class="nav-bubble" id="navBubble" style="width: 80px; left: 0px;"></div>
+  
+  <a class="flex flex-col items-center justify-center px-6 py-2 transition-colors duration-300 ease-out nav-item active" data-page="beranda" href="#">
+    <span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+    <span class="text-xs font-semibold font-label">Beranda</span>
+  </a>
+  
+  <a class="flex flex-col items-center justify-center px-6 py-2 transition-colors duration-300 ease-out nav-item" data-page="kategori" href="#">
+    <span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+    <span class="text-xs font-semibold font-label">Kategori</span>
+  </a>
+  
+  <a class="flex flex-col items-center justify-center px-6 py-2 transition-colors duration-300 ease-out nav-item" data-page="pesanan" href="#">
+    <span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+    <span class="text-xs font-semibold font-label">Pesanan</span>
+  </a>
+</nav>
+
+<!-- ============ FAB ============ -->
+<button class="fixed bottom-28 right-6 w-14 h-14 bg-primary text-white rounded-full shadow-lg flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform z-40" id="fab-cart">
+  <span class="material-symbols-outlined text-3xl">add_shopping_cart</span>
+  <span id="cart-badge" class="absolute bottom-9 right-0 bg-error text-on-error w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold font-label hidden" style="transform: translate(8px, -8px);">0</span>
+</button>
+
+<!-- ============ CART MODAL ============ -->
+<div id="cart-modal" class="cart-modal">
+  <!-- Backdrop -->
+  <div class="cart-modal-backdrop fixed inset-0 bg-on-surface/30 backdrop-blur-sm" id="cart-backdrop"></div>
+  
+  <!-- Bottom Sheet -->
+  <div class="glass-sheet max-w-lg mx-auto w-full rounded-t-[3rem] shadow-[0_-8px_40px_rgba(0,0,0,0.12)] flex flex-col h-screen max-h-[70vh] relative z-10">
+    <!-- Sheet Header -->
+    <div class="flex-shrink-0 flex flex-col items-center pt-3 pb-6">
+      <div class="w-12 h-1.5 bg-outline-variant/30 rounded-full mb-6"></div>
+      <div class="flex justify-between items-center w-full px-8">
+        <h2 class="font-headline font-extrabold text-2xl text-on-surface">Keranjangmu</h2>
+        <button class="bg-surface-container-high p-2 rounded-full hover:scale-95 transition-transform" id="cart-close">
+          <span class="material-symbols-outlined text-on-surface">close</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Cart Items List -->
+    <div class="min-h-0 flex-1 overflow-y-auto px-8 space-y-6 pb-8" id="cart-items">
+      <!-- Items will be added here dynamically -->
+    </div>
+
+    <!-- Empty Cart Message -->
+    <div id="empty-cart-message" class="empty-cart-message hidden flex-1 flex flex-col items-center justify-center text-center px-8">
+      <span class="material-symbols-outlined text-6xl text-surface-container-high mb-4">shopping_cart</span>
+      <p class="text-on-surface-variant text-lg font-semibold">Keranjang kamu kosong</p>
+      <p class="text-on-surface-variant text-sm mt-2">Yuk pilih snack favorit kamu!</p>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="flex-shrink-0 p-8 bg-surface-container-low rounded-t-[2.5rem] space-y-6">
+      <div class="flex justify-between items-end">
+        <div class="space-y-1">
+          <p class="text-sm font-semibold text-on-surface-variant font-label">Total Pembayaran</p>
+          <p class="text-3xl font-extrabold text-on-surface font-headline tracking-tighter" id="cart-total">Rp 0</p>
+        </div>
+        <div class="text-right space-y-1">
+          <button id="clear-cart-btn" class="flex items-center gap-1 text-error text-xs font-semibold hover:opacity-70 transition-opacity justify-end w-full">
+            <span class="material-symbols-outlined text-sm">clear_all</span>
+            <span>Hapus Semua</span>
+          </button>
+          <p class="text-xs text-on-surface-variant font-label">*Sudah termasuk pajak</p>
+        </div>
+      </div>
+      <button onclick="openDeliveryModal()" class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary py-5 rounded-lg font-headline font-extrabold text-lg shadow-[0_8px_20px_rgba(140,74,0,0.25)] hover:scale-[0.98] transition-transform duration-200 active:scale-95">
+        Bayar Sekarang
+      </button>
+      <!-- Secure Payment Tag -->
+      <div class="flex justify-center items-center gap-2 opacity-60">
+        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+        <p class="text-[10px] uppercase tracking-widest font-bold">Pembayaran Aman & Terenkripsi</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SUBMIT SNACK MODAL ============ -->
+<div id="ajukan-modal" class="ajukan-modal">
+  <div class="ajukan-modal-content">
+    <div class="ajukan-modal-header">
+      <h2>Ajukan Jajanan Barumu</h2>
+      <button class="ajukan-modal-close" onclick="closeSubmitSnackModal()" title="Tutup">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="ajukan-modal-body">
+      <form action="https://formsubmit.co/hanleysetiawan@gmail.com" method="POST" autocomplete="off" class="ajukan-form">
+        <!-- Nama Jajanan -->
+        <div class="form-group">
+          <label for="snack-name">Nama Jajanan <span class="required">*</span></label>
+          <input type="text" id="snack-name" name="snack_name" placeholder="Contoh: Basreng Ayam Pedas" required/>
+        </div>
+
+        <!-- Asal Daerah -->
+        <div class="form-group">
+          <label for="snack-origin">Asal Daerah <span class="required">*</span></label>
+          <input type="text" id="snack-origin" name="snack_origin" placeholder="Contoh: Tasikmalaya, Jawa Barat" required/>
+        </div>
+
+        <!-- Kategori -->
+        <div class="form-group">
+          <label for="snack-category">Kategori <span class="required">*</span></label>
+          <select id="snack-category" name="snack_category" required>
+            <option value="">Pilih kategori</option>
+            <option value="Pedas">Pedas Nampol 🌶️</option>
+            <option value="Manis">Manis 🍰</option>
+            <option value="Sehat">Sehat 🥗</option>
+            <option value="Kiloan">Kiloan 🛍️</option>
+          </select>
+        </div>
+
+        <!-- Deskripsi Singkat -->
+        <div class="form-group">
+          <label for="snack-description">Deskripsi Singkat <span class="required">*</span></label>
+          <textarea id="snack-description" name="snack_description" placeholder="Jelaskan secara singkat apa itu jajanan dan apa kelebihannya..." required></textarea>
+        </div>
+
+        <!-- Rating -->
+        <div class="form-group">
+          <label>Seberapa Enak Menurut Kamu? <span class="required">*</span></label>
+          <div class="rating-group" id="rating-group">
+            <button type="button" class="rating-star" data-rating="1" title="Jelek">★</button>
+            <button type="button" class="rating-star" data-rating="2" title="Kurang">★</button>
+            <button type="button" class="rating-star" data-rating="3" title="Biasa">★</button>
+            <button type="button" class="rating-star" data-rating="4" title="Enak">★</button>
+            <button type="button" class="rating-star" data-rating="5" title="Sangat Enak">★</button>
+          </div>
+          <input type="hidden" id="snack-rating" name="snack_rating" value="" required/>
+        </div>
+
+        <!-- Hidden field untuk FORMSUBMIT
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourdomain.com/success"> -->
+
+        <!-- Submit Button -->
+        <button type="submit" class="form-submit-btn">Kirim Ajukan</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SEARCH MODAL ============ -->
+<div id="search-modal" class="search-modal">
+  <div class="search-modal-content">
+    <!-- Search Header -->
+    <div class="search-header">
+      <div class="search-input-wrapper">
+        <button id="search-back-btn" class="material-symbols-outlined" title="Kembali">arrow_back</button>
+        <input id="search-input" type="text" placeholder="cari snack favorit..." autocomplete="off">
+        <button id="search-find-btn" class="material-symbols-outlined" title="Cari">search</button>
+      </div>
+    </div>
+
+    <!-- Search Body -->
+    <div class="search-body">
+      <!-- Search Results (hidden by default) -->
+      <div id="search-results-section" class="search-section hidden">
+        <div class="search-section-title">Hasil Pencarian</div>
+        <div id="search-results" class="search-results">
+          <!-- Results will be added dynamically -->
+        </div>
+      </div>
+
+      <!-- Recent Searches Section -->
+      <div id="recent-section" class="search-section">
+        <div class="search-section-title">Riwayat Produk</div>
+        <div id="recent-searches">
+          <!-- Recent searches will be added dynamically -->
+        </div>
+      </div>
+
+      <!-- Popular Now Section -->
+      <div id="popular-section" class="search-section">
+        <div class="search-section-title">Populer Sekarang</div>
+        <div id="popular-items" class="popular-items">
+          <!-- Popular items will be added dynamically -->
+        </div>
+      </div>
+
+      <!-- Explore Categories Section -->
+      <div id="categories-section" class="search-section">
+        <div class="search-section-title">Jelajahi Kategori</div>
+        <div class="category-cards">
+          <div class="category-card" style="background: linear-gradient(135deg, #fd8b00 0%, #ea8000 100%);" onclick="searchByCategory('pedes')">
+            <span class="material-symbols-outlined">local_fire_department</span>
+            <span>PedasNampol</span>
+          </div>
+          <div class="category-card" style="background: linear-gradient(135deg, #ffd709 0%, #efc900 100%); color: #5b4b00;" onclick="searchByCategory('manis')">
+            <span class="material-symbols-outlined">cake</span>
+            <span>Manis</span>
+          </div>
+          <div class="category-card" style="background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);" onclick="searchByCategory('sehat')">
+            <span class="material-symbols-outlined">eco</span>
+            <span>Sehat</span>
+          </div>
+          <div class="category-card" style="background: linear-gradient(135deg, #a53141 0%, #952436 100%);" onclick="searchByCategory('kiloan')">
+            <span class="material-symbols-outlined">shopping_bag</span>
+            <span>Kiloan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ DELIVERY MODAL ============ -->
+<div id="delivery-modal" class="delivery-modal">
+  <div class="delivery-modal-content">
+    <!-- Delivery Header -->
+    <div class="delivery-header">
+      <h3>Informasi Pengiriman</h3>
+      <button class="delivery-close-btn" onclick="closeDeliveryModal()" title="Tutup">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+
+    <!-- Delivery Body -->
+    <div class="delivery-body">
+      <!-- Info Box -->
+      <div class="delivery-info-box">
+        <span class="material-symbols-outlined">info</span>
+        <p>Pastikan data pengiriman kamu sudah benar agar paket sampai dengan selamat</p>
+      </div>
+
+      <!-- Delivery Form -->
+      <form id="delivery-form" onsubmit="handleDeliverySubmit(event)">
+        <!-- Nama Penerima -->
+        <div class="delivery-form-group">
+          <label for="recipient-name">
+            Nama Penerima
+            <span class="required">*</span>
+          </label>
+          <input 
+            type="text" 
+            id="recipient-name" 
+            name="recipient_name" 
+            placeholder="Masukkan nama penerima paket"
+            required
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="delivery-form-group">
+          <label for="recipient-email">
+            Email
+            <span class="required">*</span>
+          </label>
+          <input 
+            type="email" 
+            id="recipient-email" 
+            name="recipient_email" 
+            placeholder="Contoh: nama@email.com"
+            required
+          />
+        </div>
+
+        <!-- Nomor Telepon -->
+        <div class="delivery-form-group">
+          <label for="recipient-phone">
+            Nomor Telepon
+            <span class="required">*</span>
+          </label>
+          <input 
+            type="tel" 
+            id="recipient-phone" 
+            name="recipient_phone" 
+            placeholder="Contoh: 08123456789"
+            pattern="[0-9+\-\s]{10,}"
+            required
+          />
+        </div>
+
+        <!-- Alamat Lengkap -->
+        <div class="delivery-form-group">
+          <label for="recipient-address">
+            Alamat Lengkap
+            <span class="required">*</span>
+          </label>
+          <textarea 
+            id="recipient-address" 
+            name="recipient_address" 
+            placeholder="Masukkan alamat lengkap (jalan, nomor rumah, rt/rw, dll)"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Kota/Kabupaten dan Provinsi -->
+        <div class="delivery-form-row">
+          <div class="delivery-form-group">
+            <label for="recipient-city">
+              Kota/Kabupaten
+              <span class="required">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="recipient-city" 
+              name="recipient_city" 
+              placeholder="Contoh: Jakarta Selatan"
+              required
+            />
+          </div>
+          <div class="delivery-form-group">
+            <label for="recipient-province">
+              Provinsi
+              <span class="required">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="recipient-province" 
+              name="recipient_province" 
+              placeholder="Contoh: DKI Jakarta"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Kode Pos -->
+        <div class="delivery-form-group">
+          <label for="recipient-postal">
+            Kode Pos
+            <span class="required">*</span>
+          </label>
+          <input 
+            type="text" 
+            id="recipient-postal" 
+            name="recipient_postal" 
+            placeholder="Contoh: 12345"
+            pattern="[0-9]{5,}"
+            required
+          />
+        </div>
+
+        <!-- Catatan Pengiriman -->
+        <div class="delivery-form-group">
+          <label for="delivery-note">
+            Catatan Pengiriman (Opsional)
+          </label>
+          <textarea 
+            id="delivery-note" 
+            name="delivery_note" 
+            placeholder="Contoh: Tinggal di belakang, tolong letakkan di pintu samping, dll"
+          ></textarea>
+        </div>
+      </form>
+    </div>
+
+    <!-- Delivery Footer -->
+    <div class="delivery-footer">
+      <button type="button" class="delivery-btn-cancel" onclick="closeDeliveryModal()">Batal</button>
+      <button type="button" class="delivery-btn-next" onclick="submitDeliveryForm()">Lanjut ke Pembayaran</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PAYMENT MODAL ============ -->
+<div id="payment-modal" class="payment-modal">
+  <div class="payment-modal-content">
+    <!-- Payment Header -->
+    <div class="payment-header">
+      <h3>Pilih Metode Pembayaran</h3>
+      <button class="payment-close-btn" onclick="closePaymentModal()" title="Tutup">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+
+    <!-- Payment Body -->
+    <div class="payment-body">
+      <!-- Summary Card -->
+      <div class="payment-summary">
+        <div class="payment-summary-left">
+          <p class="payment-summary-label">Total Pembayaran</p>
+          <h2 class="payment-summary-amount" id="payment-total-display">Rp 0</h2>
+        </div>
+        <span class="material-symbols-outlined payment-summary-icon" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+      </div>
+
+      <!-- E-Wallet Section -->
+      <div class="payment-section">
+        <div class="payment-section-header">
+          <h4 class="payment-section-title">E-Wallet</h4>
+          <span class="payment-recommended-badge">Recommended</span>
+        </div>
+        <div class="payment-options">
+          <!-- Gopay -->
+          <label class="payment-option">
+            <input type="radio" name="payment-method" value="gopay" checked>
+            <div class="payment-option-icon">
+              <span class="material-symbols-outlined">account_balance_wallet</span>
+            </div>
+            <div class="payment-option-info">
+              <p class="payment-option-name">Gopay</p>
+              <p class="payment-option-desc">Fast checkout with PIN</p>
+            </div>
+          </label>
+          <!-- OVO -->
+          <label class="payment-option">
+            <input type="radio" name="payment-method" value="ovo">
+            <div class="payment-option-icon">
+              <span class="material-symbols-outlined">payments</span>
+            </div>
+            <div class="payment-option-info">
+              <p class="payment-option-name">OVO</p>
+              <p class="payment-option-desc">Get OVO Points cashback</p>
+            </div>
+          </label>
+          <!-- ShopeePay -->
+          <label class="payment-option">
+            <input type="radio" name="payment-method" value="shopeepay">
+            <div class="payment-option-icon" style="color: #f95630;">
+              <span class="material-symbols-outlined">shopping_cart_checkout</span>
+            </div>
+            <div class="payment-option-info">
+              <p class="payment-option-name">ShopeePay</p>
+              <p class="payment-option-desc">Free shipping vouchers apply</p>
+            </div>
+          </label>
+          <!-- Dana -->
+          <label class="payment-option">
+            <input type="radio" name="payment-method" value="dana">
+            <div class="payment-option-icon">
+              <span class="material-symbols-outlined">savings</span>
+            </div>
+            <div class="payment-option-info">
+              <p class="payment-option-name">Dana</p>
+              <p class="payment-option-desc">Easy one-tap payment</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Transfer Bank Section -->
+      <div class="payment-section">
+        <h4 class="payment-section-title">Transfer Bank</h4>
+        <div class="payment-options" style="gap: 0.75rem; margin-top: 1rem;">
+          <!-- BCA -->
+          <label class="payment-bank-option">
+            <input type="radio" name="payment-method" value="bca" class="hidden">
+            <div class="payment-bank-header">
+              <span class="payment-bank-name" style="color: #0052cc;">BCA</span>
+              <span class="payment-bank-type">Virtual Account</span>
+              <span class="material-symbols-outlined" style="margin-left: auto; color: #adadac;">chevron_right</span>
+            </div>
+            <p class="payment-bank-desc">Verifikasi otomatis tanpa bukti bayar</p>
+          </label>
+          <!-- Mandiri -->
+          <label class="payment-bank-option">
+            <input type="radio" name="payment-method" value="mandiri" class="hidden">
+            <div class="payment-bank-header">
+              <span class="payment-bank-name" style="color: #c8102e; font-style: italic;">Mandiri</span>
+              <span class="payment-bank-type">Virtual Account</span>
+              <span class="material-symbols-outlined" style="margin-left: auto; color: #adadac;">chevron_right</span>
+            </div>
+            <p class="payment-bank-desc">Proses dalam hitungan detik</p>
+          </label>
+          <!-- BNI -->
+          <label class="payment-bank-option">
+            <input type="radio" name="payment-method" value="bni" class="hidden">
+            <div class="payment-bank-header">
+              <span class="payment-bank-name" style="color: #ec6b1c;">BNI</span>
+              <span class="payment-bank-type">Virtual Account</span>
+              <span class="material-symbols-outlined" style="margin-left: auto; color: #adadac;">chevron_right</span>
+            </div>
+            <p class="payment-bank-desc">Transfer dari ATM atau Mobile Banking</p>
+          </label>
+        </div>
+      </div>
+
+      <!-- Tunai/COD Section -->
+      <div class="payment-section">
+        <h4 class="payment-section-title">Tunai</h4>
+        <label class="payment-option" style="margin-top: 1rem;">
+          <input type="radio" name="payment-method" value="cod">
+          <div class="payment-option-icon">
+            <span class="material-symbols-outlined">local_shipping</span>
+          </div>
+          <div class="payment-option-info">
+            <p class="payment-option-name">COD (Bayar di Tempat)</p>
+            <p class="payment-option-desc">Hanya berlaku untuk area tertentu</p>
+          </div>
+        </label>
+      </div>
+
+      <!-- Security Badge -->
+      <div class="payment-security">
+        <span class="material-symbols-outlined" style="font-size: 1rem;">lock</span>
+        <span>Pembayaran Kamu Terenkripsi & Aman</span>
+      </div>
+    </div>
+
+    <!-- Payment Footer -->
+    <div class="payment-footer">
+      <button class="payment-confirm-btn" onclick="confirmPayment()">Konfirmasi Pembayaran</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TOAST NOTIFICATION ============ -->
+<div id="toast-notification" class="toast-notification">
+  ✓ Produk berhasil ditambahkan ke keranjang
+</div>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="script.js"></script>
+
+<!-- Payment Modal Functions -->
+<script>
+  // ========== DELIVERY MODAL FUNCTIONS ==========
+  function openDeliveryModal() {
+    const deliveryModal = document.getElementById('delivery-modal');
+    deliveryModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Load saved delivery data if exists
+    const savedDelivery = JSON.parse(localStorage.getItem('deliveryInfo')) || {};
+    document.getElementById('recipient-name').value = savedDelivery.recipient_name || '';
+    document.getElementById('recipient-email').value = savedDelivery.recipient_email || '';
+    document.getElementById('recipient-phone').value = savedDelivery.recipient_phone || '';
+    document.getElementById('recipient-address').value = savedDelivery.recipient_address || '';
+    document.getElementById('recipient-city').value = savedDelivery.recipient_city || '';
+    document.getElementById('recipient-province').value = savedDelivery.recipient_province || '';
+    document.getElementById('recipient-postal').value = savedDelivery.recipient_postal || '';
+    document.getElementById('delivery-note').value = savedDelivery.delivery_note || '';
+  }
+
+  function closeDeliveryModal() {
+    const deliveryModal = document.getElementById('delivery-modal');
+    deliveryModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function submitDeliveryForm() {
+    const form = document.getElementById('delivery-form');
+    
+    // Validate form
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    // Collect form data
+    const deliveryData = {
+      recipient_name: document.getElementById('recipient-name').value,
+      recipient_email: document.getElementById('recipient-email').value,
+      recipient_phone: document.getElementById('recipient-phone').value,
+      recipient_address: document.getElementById('recipient-address').value,
+      recipient_city: document.getElementById('recipient-city').value,
+      recipient_province: document.getElementById('recipient-province').value,
+      recipient_postal: document.getElementById('recipient-postal').value,
+      delivery_note: document.getElementById('delivery-note').value
+    };
+
+    // Save to localStorage
+    localStorage.setItem('deliveryInfo', JSON.stringify(deliveryData));
+    
+    // Show success notification
+    showToastNotification('Data pengiriman disimpan! ✓');
+    
+    // Close delivery modal and open payment modal
+    setTimeout(() => {
+      closeDeliveryModal();
+      openPaymentModal();
+    }, 500);
+  }
+
+  function handleDeliverySubmit(event) {
+    event.preventDefault();
+    submitDeliveryForm();
+  }
+
+  function openPaymentModal() {
+    const paymentModal = document.getElementById('payment-modal');
+    const cartTotal = document.getElementById('cart-total').textContent;
+    document.getElementById('payment-total-display').textContent = cartTotal;
+    paymentModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closePaymentModal() {
+    const paymentModal = document.getElementById('payment-modal');
+    paymentModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function confirmPayment() {
+    const selectedMethod = document.querySelector('input[name="payment-method"]:checked');
+    if (selectedMethod) {
+      const methodName = selectedMethod.value.toUpperCase();
+      showToastNotification(`Pembayaran via ${methodName} diproses...`);
+      setTimeout(() => {
+        // Save order to history
+        saveOrderToHistory();
+        clearCart();
+        closePaymentModal();
+        // Trigger success splash screen
+        triggerBuySuccessSplash();
+        // Tambahkan logika pembayaran di sini
+        alert('Pembayaran berhasil diproses!\nMetode: ' + methodName);
+      }, 1500);
+    }
+  }
+
+  function saveOrderToHistory() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    if (cart.length === 0) return;
+    
+    const orderHistory = JSON.parse(localStorage.getItem('orderHistory')) || [];
+    const today = new Date();
+    const dateStr = today.toLocaleDateString('id-ID', { 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric' 
+    });
+    
+    const newOrder = {
+      id: Date.now(),
+      date: dateStr,
+      items: cart,
+      status: 'Diproses',
+      total: document.getElementById('cart-total').textContent,
+      delivery: JSON.parse(localStorage.getItem('deliveryInfo')) || {}
+    };
+    
+    orderHistory.unshift(newOrder); // Add to beginning (latest first)
+    localStorage.setItem('orderHistory', JSON.stringify(orderHistory));
+    
+    // Apply referral tracking if user came from referral link
+    if (typeof applyReferralCode === 'function') {
+      applyReferralCode(newOrder);
+    }
+    
+    renderOrderHistory();
+  }
+
+  function renderOrderHistory() {
+    const orderHistory = JSON.parse(localStorage.getItem('orderHistory')) || [];
+    const container = document.getElementById('recent-orders-container');
+    const currentView = 'grid';
+    
+    if (!container) return;
+    
+    // Set the view class
+    container.classList.remove('order-grid-layout', 'order-list-layout');
+    container.classList.add(`order-${currentView}-layout`);
+    
+    if (orderHistory.length === 0) {
+      container.innerHTML = '<p class="text-center text-on-surface-variant py-8">Belum ada pesanan</p>';
+      return;
+    }
+    
+    // Show only the 3 most recent orders
+    const recentOrders = orderHistory.slice(0, 3);
+    
+    // Flatten all items from all orders to display each item separately
+    const allItemCards = [];
+    
+    recentOrders.forEach((order) => {
+      order.items.forEach((item) => {
+        const productId = item?.id || '';
+        const productData = JSON.stringify(item).replace(/"/g, '&quot;');
+        
+        allItemCards.push(`
+          <!-- Product Card -->
+          <div class="bg-white border border-outline-variant rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <!-- Image Container -->
+            <div class="relative w-full bg-surface-container-low h-28 flex items-center justify-center overflow-hidden">
+              <img src="${item?.image || 'img/placeholder.jpg'}" alt="${item?.name || 'Pesanan'}" class="w-full h-full object-cover">
+            </div>
+            
+            <!-- Content -->
+            <div class="p-3">
+              <p class="text-xs text-on-surface-variant mb-1">${order.date}</p>
+              <h4 class="text-sm text-primary font-bold mb-2 line-clamp-2">${item?.name || 'Pesanan'}</h4>
+              
+              <!-- Status -->
+              <div class="flex items-center gap-2 mb-3">
+                <span class="flex items-center gap-1 bg-[#fff3e0] text-[#e65100] text-xs font-semibold px-2 py-0.5 rounded-full">
+                  <span class="material-symbols-outlined text-sm">schedule</span>
+                  ${order.status}
+                </span>
+              </div>
+              
+              <!-- Buttons -->
+              <div class="flex gap-2">
+                <button class="flex-1 bg-surface-container text-on-surface border border-outline-variant font-semibold py-1.5 rounded text-xs hover:bg-surface-container-high transition-colors" onclick="goToProductDetail(${productId})">
+                  Detail
+                </button>
+                <button class="flex-1 bg-primary text-on-primary font-semibold py-1.5 rounded text-xs hover:bg-primary-dim transition-colors" onclick="buyAgainFromOrder('${productData.replace(/'/g, "\\'")}')">
+                  Beli Lagi
+                </button>
+              </div>
+            </div>
+          </div>
+        `);
+      });
+    });
+    
+    container.innerHTML = allItemCards.join('');
+  }
+
+  function goToProductDetail(productId) {
+    if (productId) {
+      window.location.href = `detail.html?id=${productId}`;
+    }
+  }
+
+  function buyAgainFromOrder(productDataStr) {
+    try {
+      const productData = JSON.parse(productDataStr.replace(/&quot;/g, '"'));
+      if (productData.id && productData.name && productData.price && productData.image) {
+        addToCart({
+          id: productData.id,
+          name: productData.name,
+          price: productData.price,
+          image: productData.image
+        });
+        showToastNotification(`${productData.name} ditambahkan ke keranjang`);
+        openCart(true);
+      }
+    } catch (e) {
+      console.error('Error parsing product data:', e);
+    }
+  }
+
+  // Close payment modal when clicking outside (backdrop)
+  document.addEventListener('DOMContentLoaded', function() {
+    const paymentModal = document.getElementById('payment-modal');
+    if (paymentModal) {
+      paymentModal.addEventListener('click', function(e) {
+        if (e.target === paymentModal) {
+          closePaymentModal();
+        }
+      });
+    }
+
+    // Check if user came from checkout on detail page
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('checkout') === 'true') {
+      // Open delivery modal automatically
+      setTimeout(() => {
+        openDeliveryModal();
+      }, 300);
+      // Clean up URL
+      window.history.replaceState({}, document.title, 'index.html');
+    }
+
+    // Hide header when scrolling near footer
+    const header = document.getElementById('main-header');
+    const footer = document.querySelector('footer');
+    
+    window.addEventListener('scroll', function() {
+      if (!header || !footer) return;
+      
+      const footerRect = footer.getBoundingClientRect();
+      const distanceToFooter = footerRect.top - window.innerHeight;
+      
+      // Hide header when footer is within 50px from bottom of viewport
+      if (distanceToFooter < 50) {
+        header.style.opacity = '0';
+        header.style.pointerEvents = 'none';
+      } else {
+        header.style.opacity = '1';
+        header.style.pointerEvents = 'auto';
+      }
+    });
+  });
+</script>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-primary text-on-primary mt-auto w-full">
+  <div class="max-w-4xl mx-auto px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <!-- Brand Info -->
+      <div>
+        <h3 class="text-xl font-bold mb-3">Lokal-Lapak</h3>
+        <p class="text-sm opacity-90 mb-4">Snack Hub Terlengkap - Membawa camilan lokal dengan sentuhan modern ke meja Anda.</p>
+        <p class="text-xs opacity-75">© 2025 Lokal-Lapak. All rights reserved.</p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-bold mb-3 text-sm">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="opacity-90 hover:opacity-100 transition-opacity">Home</a></li>
+          <li><a href="about.html" class="opacity-90 hover:opacity-100 transition-opacity">About Us</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info -->
+      <div>
+        <h4 class="font-bold mb-3 text-sm">Contact Us</h4>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">mail</span>
+            <span>hanleysetiawan@gmail.com</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">phone</span>
+            <span>+62 812 3456 7890</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            <span>Surabaya, Indonesia</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="border-t border-on-primary border-opacity-20 pt-6">
+      <div class="flex flex-col md:flex-row justify-between items-center text-xs">
+        <p class="opacity-80"></p>
+        <div class="flex gap-4 mt-4 md:mt-0">
+          -
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
